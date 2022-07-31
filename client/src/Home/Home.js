@@ -78,15 +78,18 @@ export default function HomePage() {
             <i className="auto-type">
               <Fancy />
             </i></h1>
-          <p className="lead reveal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As we all know, notes are a lifesaver during exam time. During exam season, many students rush for notes and previous year's question papers.
+          <p className="lead reveal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to IIITL HUB, a place where we provide you everything that you need to move forward in your career and achieve new highs.
             <br />
-            We provide high-quality, best-of-the-best notes for all. Not only the notes, we also provide all the assignments and previous mid-semester and end-semester question papers and their solutions free of cost.
+           Let's have a look at what we actually provide:
           </p>
           <h1 className="py-5-first-heading reveal">Notes</h1>
-          <p className="lead reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minima debitis nesciunt harum molestias illo in, nam tempora quidem quaerat quas! Accusamus assumenda non nisi aliquid fugit odit sequi ipsam! amet, consectetur adipisicing elit. Praesentium minima, nemo nulla veritatis, aperiam molestiae fugit, excepturi voluptates vitae possimus in repudiandae dolor illo accusamus eos sit esse velit harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt accusantium vero doloremque temporibus maiores repellendus magni ab voluptatibus ut quaerat non quia culpa beatae saepe enim cupiditate eveniet corporis, voluptatem adipisci! Beatae molestiae blanditiis magnam animi, harum nostrum nesciunt neque fugiat quod, placeat praesentium natus debitis temporibus commodi amet?
+          <p className="lead reveal">As students, we all know that we need notes in the process of learning. We provide you the filtered notes that cover the complete syllabus that was taught in the classes, and question papers of previous years to help you achieve a good score in your academics.
+          </p>
+          <h1 className="py-5-first-heading reveal">Blogs</h1>
+          <p className="lead reveal">This section includes the stories and journeys of our seniors who achieved great highs in their fields and by their stories, we can learn from them and can build our own path of success. Here you can find blogs related to GSOC (Google summer of code) competition, App development, web development, competitive programming, freelancing etc. which will help you to enhance your knowledge in these fields and gain some clarity in your life.
           </p>
           <h1 className="py-5-second-heading reveal">About Us</h1>
-          <p className="lead reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minima debitis nesciunt harum molestias illo in, nam tempora quidem quaerat quas! Accusamus assumenda non nisi aliquid fugit odit sequi ipsam! amet, consectetur adipisicing elit. Praesentium minima, nemo nulla veritatis, aperiam molestiae fugit, excepturi voluptates vitae possimus in repudiandae dolor illo accusamus eos sit esse velit harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt accusantium vero doloremque temporibus maiores repellendus magni ab voluptatibus ut quaerat non quia culpa beatae saepe enim cupiditate eveniet corporis, voluptatem adipisci! Beatae molestiae blanditiis magnam animi, harum nostrum nesciunt neque fugiat quod, placeat praesentium natus debitis temporibus commodi amet?
+          <p className="lead reveal">We all are students of IIITL Lucknow pursuing our B.Tech. We have this build website to help students in their learning process. We learnt many things during this development journey and hope that you get help from it.
           </p>
         </div>
       </section>
