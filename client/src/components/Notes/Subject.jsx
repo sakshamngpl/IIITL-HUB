@@ -5,14 +5,26 @@ const Subject = () => {
   const { sem_num, subject } = useParams();
 
   const onChange = (e) => {
-    console.log(e)
+    const file = e.target.files[0];
+
+    const reader = new FileReader();
+    let fileContent = '';
+
+    reader.addEventListener("load", () => {
+      // convert file to base64 string
+      file.content = reader.result;
+      console.log(file);
+      console.log(file.lastModifiedDate.toString())
+    }, false);
+    if (file) {
+      reader.readAsDataURL(file);
+    }
 
   }
   return (
     <div>
-
       <div>{sem_num + " " + subject}</div>
-      <input type="file" name="file" id="file" onChange={(e) => {onChange(e)}} />
+      <input type="file" name="file" id="file" onChange={onChange} />
     </div>
   )
 }

@@ -5,7 +5,7 @@ const Semester = () => {
   const { sem_num } = useParams();
   console.log(sem_num)
   return (
-    <div>
+    <div className='container'>
       <div>Welcome to {sem_num}</div>
       <Link to={`${sem_num}/oops`}>OOPS</Link>
     </div>

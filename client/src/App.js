@@ -2,9 +2,11 @@ import React, { useState} from 'react';
 import { Container,Grid } from '@material-ui/core';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Appstyles from './Appstyles';
+import 'bootstrap/dist/css/bootstrap.css';
 
 import PostDetails from './components/PostDetails/PostDetails';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/Navbar.js';
+import Navbar2 from './components/Navbar/Navbar2.js';
 import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
 import CreatorOrTag from './components/CreatorOrTag/CreatorOrTag';
@@ -21,6 +23,9 @@ const App = () => {
     <BrowserRouter>
       <Container maxWidth="xl">
         <Navbar />
+        <Navbar2 />
+
+
         <Switch>
           <Route path="/notes" exact component={SemesterList} />
           <Route path="/notes/:sem_num" exact component={Semester} />
