@@ -3,6 +3,7 @@ import { Container,Grid } from '@material-ui/core';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Appstyles from './Appstyles';
 import 'bootstrap/dist/css/bootstrap.css';
+import  TimelinePage  from './components/Timeline/TimelinePage.js';
 
 import PostDetails from './components/PostDetails/PostDetails';
 import Navbar from './components/Navbar/Navbar.js';
@@ -30,6 +31,7 @@ const App = () => {
         <Switch>
         <Route path="/" exact component={HomePage} />
           <Route path="/notes" exact component={SemesterList} />
+          <Route path="/timeline" exact component={TimelinePage} />
           <Route path="/notes/:sem_num" exact component={Semester} />
           <Route path="/notes/:sem_num/:subject" exact component={Subject} />
           <Route path="/posts" exact component={Home} />

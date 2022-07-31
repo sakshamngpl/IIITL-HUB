@@ -1,0 +1,314 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=League+Gothic&family=Noto+Serif&family=Rubik+Moonrocks&family=Tiro+Bangla:ital@1&display=swap");
+::-webkit-scrollbar{
+  width: 20px;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+}
+::-webkit-scrollbar-thumb{
+  background:  #c2c7c7;
+}
+::-webkit-scrollbar-button{
+  background: #808282;
+}
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  background-color: #eeeeee;
+}
+
+h1 {
+  font-size: 200%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+header {
+  position: relative;
+  background: #3248c5e3;
+  color: #fff;
+  padding: 130px 0;
+  min-height: 5vh;
+
+}
+header h1{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3.2rem;
+  margin-top: 1.7em;
+  letter-spacing: .8rem;
+   text-shadow: 4px 10px 4px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3); 
+}
+header p {
+  font-family: "Allura";
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 0;
+  font-size: 60px;
+  margin-top: -30px;
+}
+
+
+
+
+section {
+    padding: 100px 0;
+  }   
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h2 {
+  margin-left: 10px;
+}
+
+.navbar-nav li span {
+  display: inline-block;
+  position: relative;
+  color: #3248c5e3;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+}
+
+span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3248c5e3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+span:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.intro-text {
+  background-image: url("notes.jpg");
+  color: var(--white);
+  padding: 2rem 0;
+  height: 500px;
+
+}
+
+.container-nav {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  line-height: 1.6;
+}
+i{
+  color: #ff1463; 
+  font-family: monospace; 
+  font-size: 2.3rem; 
+  font-style: normal;
+  line-height: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  .timeline {
+    position: relative;
+  }
+  .timeline::before {
+    content: "";
+    background: #C5CAE9;
+    width: 5px;
+    height: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    padding: 40px 30px 10px 30px;
+  }
+  .timeline-item:nth-child(even) .timeline-content .date {
+    right: auto;
+    left: 0;
+  }
+  .timeline-item:nth-child(even) .timeline-content::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+  .timeline-item::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  }
+  .timeline-content::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #f5f5f5;
+  }
+  
+  .timeline-img {
+    width: 30px;
+    height: 30px;
+    background: #3F51B5;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -15px;
+  }
+  
+.bnt-more {
+    background: #3F51B5;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+  }
+  .bnt-more:hover, .bnt-more:active, .bnt-more:focus {
+    background: #32408f;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .timeline-card {
+    padding: 0 !important;
+  }
+  .timeline-card p {
+    padding: 0 20px;
+  }
+  .timeline-card a {
+    margin-left: 20px;
+  }
+  
+  .timeline-item .timeline-img-header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)) center center no-repeat;
+    background-size: cover;
+  }
+  #div-img{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),url(iiitl.png) center center no-repeat;
+  }
+  #div-img-2{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),url(hackofesta.jpg) center center no-repeat;
+  }
+  #div-img-3{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),url(iiitlpic.avif) center center no-repeat
+  }
+  .timeline-img-header {
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .timeline-img-header h2 {
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+  }
+  
+  blockquote {
+    margin-top: 30px;
+    color: #757575;
+    border-left-color: #3F51B5;
+    padding: 0 20px;
+  }
+  
+  .date {
+    background: #ff1463;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .timeline::before {
+      left: 50px;
+    }
+    .timeline .timeline-img {
+      left: 50px;
+    }
+    .timeline .timeline-content {
+      max-width: 100%;
+      width: auto;
+      margin-left: 70px;
+    }
+    .timeline .timeline-item:nth-child(even) .timeline-content {
+      float: none;
+    }
+    .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      width: 0;
+      height: 0;
+      top: 30px;
+      left: -15px;
+      border-width: 10px 15px 10px 0;
+      border-color: transparent #f5f5f5 transparent transparent;
+    }
+  }
