@@ -14,6 +14,7 @@ import Form from './components/Form/Form';
 import SemesterList from './components/Notes/SemesterList';
 import Semester from './components/Notes/Semester';
 import Subject from './components/Notes/Subject';
+import HomePage from './Home/Home'
 
 const App = () => {
   const user = JSON.parse(localStorage.getItem('profile'));
@@ -27,10 +28,10 @@ const App = () => {
 
 
         <Switch>
+        <Route path="/" exact component={HomePage} />
           <Route path="/notes" exact component={SemesterList} />
           <Route path="/notes/:sem_num" exact component={Semester} />
           <Route path="/notes/:sem_num/:subject" exact component={Subject} />
-          <Route path="/" exact component={() => <Redirect to="/posts" />} />
           <Route path="/posts" exact component={Home} />
           <Route path="/posts/search" exact component={Home} />
           <Route path="/posts/:id" exact component={PostDetails} />

@@ -36,8 +36,8 @@ app.post('/uploadNotes', async (req, res) => {
   res.json(req.body);
 })
 
-app.get('/getfiles',async(req,res)=>{
-      const datafiles= await Note.find(req.body);
-      console.log(datafiles)
-})
+// app.get('/getfiles',async(req,res)=>{
+//       const datafiles= await Note.find(req.body);
+//       console.log(datafiles)
+// })
 mongoose.set('useFindAndModify', false);

@@ -30,6 +30,23 @@ const Subject = () => {
       file.content = reader.result;
       console.log(file);
       console.log(file.lastModifiedDate.toDateString())
+
+
+
+      const response = await fetch('http://localhost:8082/uploadNotes', {
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        redirect: 'follow',
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify(data)
+      });
+      return response.json();
+
     }, false);
     if (file) {
       reader.readAsDataURL(file);
