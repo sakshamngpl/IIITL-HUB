@@ -1,17 +1,18 @@
 import React from 'react';
+import $ from 'jquery';
 // import "https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js";
 // import "https://code.jquery.com/jquery-2.2.4.min.js"
-$(function(){
-
-    window.sr = ScrollReveal();
+jquery.$(function(){
   
-    if ($(window).width() < 768) {
+    window.jquery.sr = jquery.ScrollReveal();
   
-      if ($('.timeline-content').hasClass('js--fadeInLeft')) {
-        $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+    if (jquery.$(window).width() < 768) {
+  
+      if (jquery.$('.timeline-content').hasClass('js--fadeInLeft')) {
+        jquery.$('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
       }
   
-      sr.reveal('.js--fadeInRight', {
+      jquery.sr.reveal('.js--fadeInRight', {
         origin: 'right',
         distance: '300px',
         easing: 'ease-in-out',
@@ -20,14 +21,14 @@ $(function(){
   
     } else {
       
-      sr.reveal('.js--fadeInLeft', {
+      jquery.sr.reveal('.js--fadeInLeft', {
         origin: 'left',
         distance: '300px',
         easing: 'ease-in-out',
         duration: 800,
       });
   
-      sr.reveal('.js--fadeInRight', {
+      jquery.sr.reveal('.js--fadeInRight', {
         origin: 'right',
         distance: '300px',
         easing: 'ease-in-out',
@@ -36,14 +37,14 @@ $(function(){
   
     }
     
-    sr.reveal('.js--fadeInLeft', {
+    jquery.sr.reveal('.js--fadeInLeft', {
         origin: 'left',
         distance: '300px',
         easing: 'ease-in-out',
         duration: 800,
       });
   
-      sr.reveal('.js--fadeInRight', {
+      jquery.sr.reveal('.js--fadeInRight', {
         origin: 'right',
         distance: '300px',
         easing: 'ease-in-out',

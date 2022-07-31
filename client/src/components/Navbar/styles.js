@@ -13,10 +13,10 @@ export default makeStyles((theme) => ({
     alignItems: 'center',
     height:'100px',
     padding: '10px 50px',
-    backgroundColor: '#66BFBF', // background colour of the navbar
+    backgroundColor: '#3F51B5', // background colour of the navbar
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
-      backgroundColor:'#66BFBF' // background colour of the navbar when the screen size decreases
+      backgroundColor:'#3F51B5' // background colour of the navbar when the screen size decreases
     },
   },
   heading: {

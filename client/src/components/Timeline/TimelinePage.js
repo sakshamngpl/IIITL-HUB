@@ -1,6 +1,6 @@
 import React from 'react'
-import './timneline.css'
-import './timelineScript.js'
+import './timeline.css'
+// import './timelineScript.js'
 
   const TimelinePage = ()=>{
     
