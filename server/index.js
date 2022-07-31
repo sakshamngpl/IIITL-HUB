@@ -18,20 +18,26 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
+
+const CONNECTION_URL = 'mongodb+srv://Rudranil:*Rudranil01@cluster0.a5ervwq.mongodb.net/pro_sem?retryWrites=true&w=majority';
+// const CONNECTION_URL = 'mongodb://localhost:27017/Restaurant';
+const PORT = process.env.PORT || 8082;
+
+mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+.then(() => {
+  console.log('connected to db')
+  app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`))
+})
+.catch((error) => console.log(`${error} did not connect`));
+
 app.post('/uploadNotes', async (req, res) => {
   const note = await Note.create(req.body);
   console.log(note);
   res.json(req.body);
 })
 
-const CONNECTION_URL = 'mongodb+srv://Rudranil:*Rudranil01@cluster0.a5ervwq.mongodb.net/pro_sem?retryWrites=true&w=majority';
-// const CONNECTION_URL = 'mongodb://localhost:27017/Restaurant';
-const PORT = process.env.PORT|| 8082;
-
-mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log('connected to db')
-    app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`))})
-  .catch((error) => console.log(`${error} did not connect`));
-
+app.get('/getfiles',async(req,res)=>{
+      const datafiles= await Note.find(req.body);
+      console.log(datafiles)
+})
 mongoose.set('useFindAndModify', false);
